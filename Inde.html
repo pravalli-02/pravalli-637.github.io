@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pravallika's futuristic B.Tech student portfolio.">
+  <title>Pravallika | Future Starts Here</title>
+  <style>
+    :root { --bg:#070b1c; --panel:rgba(18,27,58,.72); --cyan:#52f3ff; --violet:#a78bfa; --text:#eef5ff; --muted:#a8b6d8; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Arial,Helvetica,sans-serif; color:var(--text); background:radial-gradient(circle at 15% 15%,#18265b 0,transparent 35%),radial-gradient(circle at 85% 70%,#30144d 0,transparent 32%),var(--bg); min-height:100vh; line-height:1.6; }
+    body:before { content:""; position:fixed; inset:0; pointer-events:none; opacity:.18; background-image:linear-gradient(rgba(82,243,255,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(82,243,255,.13) 1px,transparent 1px); background-size:48px 48px; mask-image:linear-gradient(to bottom,black,transparent 90%); }
+    nav { position:sticky; top:0; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:18px 8%; background:rgba(7,11,28,.82); backdrop-filter:blur(14px); border-bottom:1px solid #26345d; }
+    .logo { color:var(--cyan); font-weight:800; letter-spacing:2px; }
+    nav a { color:var(--text); text-decoration:none; margin-left:22px; font-size:.92rem; }
+    nav a:hover { color:var(--cyan); }
+    .hero { min-height:78vh; display:grid; place-items:center; text-align:center; padding:80px 8% 60px; }
+    .tag { display:inline-block; border:1px solid #426b91; border-radius:30px; padding:7px 16px; color:var(--cyan); background:#0d1b35; letter-spacing:2px; font-size:.78rem; }
+    h1 { font-size:clamp(3rem,9vw,6.8rem); line-height:1.05; margin:24px 0 14px; letter-spacing:-3px; }
+    h1 span { background:linear-gradient(90deg,var(--cyan),var(--violet)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .hero p { max-width:650px; margin:0 auto; color:var(--muted); font-size:1.12rem; }
+    .btn { display:inline-block; margin-top:30px; padding:12px 24px; border-radius:8px; color:#07101f; background:linear-gradient(90deg,var(--cyan),#b6a1ff); font-weight:700; text-decoration:none; box-shadow:0 0 24px #52f3ff35; }
+    main { width:min(1050px,88%); margin:auto; }
+    section { padding:62px 0; }
+    .section-title { font-size:2rem; margin-bottom:22px; }
+    .section-title span { color:var(--cyan); }
+    .panel { background:var(--panel); border:1px solid #34446f; border-radius:18px; padding:28px; box-shadow:0 12px 45px #0005; }
+    .about-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
+    .info { padding:20px; border:1px solid #33466e; border-radius:13px; background:#0d1530; }
+    .info small { color:var(--cyan); letter-spacing:1px; display:block; margin-bottom:8px; }
+    .info strong { font-size:1.12rem; }
+    .skills { display:flex; flex-wrap:wrap; gap:12px; }
+    .skill { border:1px solid #426b91; background:#101c3a; color:#dffaff; border-radius:30px; padding:9px 16px; }
+    .note { color:var(--muted); }
+    footer { text-align:center; padding:28px 8%; color:var(--muted); border-top:1px solid #26345d; }
+    @media(max-width:600px) { nav { padding:14px 5%; } nav a { margin-left:10px; font-size:.8rem; } .hero { min-height:70vh; } h1 { letter-spacing:-1px; } .panel { padding:20px; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">PRAVALLIKA<span style="color:#a78bfa">.EXE</span></div>
+    <div><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a></div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="tag">WELCOME TO MY DIGITAL SPACE</div>
+      <h1>Hi, I'm <span>Pravallika</span></h1>
+      <p>B.Tech student • Curious learner • Future-focused thinker<br>Exploring technology and building a better tomorrow, one idea at a time.</p>
+      <a class="btn" href="#about">Explore My Profile&nbsp; ↘</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">01 / <span>About Me</span></h2>
+      <div class="panel">
+        <p>I'm Pravallika, a Bachelor of Technology (B.Tech) student with an interest in learning, creativity, and the world of technology. This portfolio is my digital introduction and a place to share my learning journey.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">02 / <span>Education</span></h2>
+      <div class="about-grid">
+        <div class="info"><small>NAME</small><strong>Pravallika</strong></div>
+        <div class="info"><small>QUALIFICATION</small><strong>Bachelor of Technology (B.Tech)</strong></div>
+        <div class="info"><small>CURRENT ROLE</small><strong>Student</strong></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">03 / <span>Skills & Interests</span></h2>
+      <div class="panel">
+        <div class="skills">
+          <span class="skill">Learning</span><span class="skill">Problem Solving</span><span class="skill">Communication</span><span class="skill">Technology</span><span class="skill">Creativity</span>
+        </div>
+        <p class="note" style="margin-top:18px">These are editable starter entries. Replace them with your actual technical skills as you learn them.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">04 / <span>My Vision</span></h2>
+      <div class="panel">
+        <p>My vision is to keep learning, strengthen my technical knowledge, and use technology to create useful solutions. The future is built by the ideas we develop today.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Pravallika • Designed with a futuristic vision</footer>
+</body>
+</html>
