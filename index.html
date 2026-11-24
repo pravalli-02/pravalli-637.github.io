@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pravallika's futuristic student portfolio">
+  <title>Pravallika | Futuristic Portfolio</title>
+  <style>
+    :root {
+      --bg: #070b18;
+      --panel: rgba(16, 25, 49, .78);
+      --cyan: #55f6ff;
+      --purple: #a78bfa;
+      --text: #eef4ff;
+      --muted: #aab8d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 15%, rgba(65, 87, 190, .24), transparent 32%),
+        radial-gradient(circle at 85% 75%, rgba(0, 220, 230, .15), transparent 30%),
+        var(--bg);
+      display: grid; place-items: center; padding: 28px;
+    }
+    .portfolio {
+      width: min(900px, 100%); position: relative; overflow: hidden;
+      padding: clamp(28px, 6vw, 58px); border: 1px solid rgba(85,246,255,.35);
+      border-radius: 28px; background: var(--panel);
+      box-shadow: 0 0 45px rgba(49, 220, 255, .12), inset 0 0 35px rgba(167,139,250,.05);
+      backdrop-filter: blur(14px);
+    }
+    .portfolio::before {
+      content: ""; position: absolute; width: 230px; height: 230px; right: -100px; top: -110px;
+      border: 1px solid rgba(85,246,255,.35); border-radius: 50%;
+      box-shadow: 0 0 0 22px rgba(85,246,255,.035), 0 0 0 45px rgba(85,246,255,.025);
+    }
+    .tag { color: var(--cyan); letter-spacing: 4px; text-transform: uppercase; font-size: .76rem; }
+    h1 { font-size: clamp(2.7rem, 8vw, 5.5rem); line-height: 1; margin: 18px 0; letter-spacing: -3px; }
+    h1 span { color: var(--cyan); text-shadow: 0 0 24px rgba(85,246,255,.35); }
+    .intro { max-width: 620px; color: var(--muted); font-size: 1.08rem; line-height: 1.8; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; margin-top: 38px; }
+    .card { padding: 23px; border: 1px solid rgba(167,139,250,.25); border-radius: 18px; background: rgba(7,13,31,.58); }
+    .card h2 { color: var(--cyan); font-size: 1rem; letter-spacing: 1.5px; text-transform: uppercase; margin: 0 0 13px; }
+    .card p { margin: 0; color: var(--text); line-height: 1.7; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skills span { border: 1px solid rgba(85,246,255,.35); border-radius: 999px; padding: 8px 13px; color: #dffcff; font-size: .9rem; background: rgba(85,246,255,.07); }
+    footer { margin-top: 32px; color: var(--muted); font-size: .85rem; letter-spacing: 1px; }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } h1 { letter-spacing: -1.5px; } }
+  </style>
+</head>
+<body>
+  <main class="portfolio">
+    <div class="tag">Student Portfolio • 2026</div>
+    <h1>Hi, I'm <span>Pravallika</span></h1>
+    <p class="intro">A curious and motivated engineering student who enjoys learning new technologies, building skills, and turning ideas into meaningful projects.</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Qualification</h2>
+        <p>Bachelor of Technology (B.Tech)<br>Computer Science and Engineering</p>
+      </article>
+      <article class="card">
+        <h2>About Me</h2>
+        <p>Friendly, creative, and eager to grow as a technology professional. I believe in continuous learning and teamwork.</p>
+      </article>
+      <article class="card" style="grid-column: 1 / -1">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>C Programming</span><span>Problem Solving</span><span>Communication</span>
+          <span>Teamwork</span><span>Creative Thinking</span><span>Continuous Learning</span>
+        </div>
+      </article>
+    </section>
+    <footer>DESIGNED WITH CURIOSITY · BUILT FOR THE FUTURE</footer>
+  </main>
+</body>
+</html>
